@@ -1,99 +1,100 @@
 <!DOCTYPE html>
 <html>
-<body>
   <head>
     <title>Wayfindr</title>
   </head>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
-      <body style='margin : 0px; overflow: hidden;'>
-        <a-scene embedded arjs="debugUIEnabled: false;">
-          <!--CUSTOM MARKER WORKING-->
+
+  <body>
+  <h1>Hello World</h1>
+  <p>I'm hosted with GitHub Pages.</p>
+      <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+      <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+        <body style='margin : 0px; overflow: hidden;'>
+          <a-scene embedded arjs="debugUIEnabled: false;">
+            <!--CUSTOM MARKER WORKING-->
 
 
-          <!--A-MARKER a-marker tag wraps around to contain the images that will be show when marker is recognized -->
-          <a-marker preset='custom' type='pattern' url="markers/newA.patt">
-            <!--first image -->
-            <a-image position="0 0.5 -2" rotation="-91 0 0" src="ATLBNew.png" width="2" height="2"></a-image>
-            <!--second image -->
-            <a-image position="0 0.5 0" rotation="-90 0 0" src="A.png" width="2" height="2"></a-image>
-            <!--third image a-sphere wraps around image that will go onto sphere.-->
-            <a-sphere position="0 0.5 2" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" radius="1" segments-height="53">
-              <a-animation attribute="rotation"
-                dur="10000"
-                from="0 360 0"
-                to= "0 0 360"
-                repeat="indefinite"
-                easing= "linear">
-              </a-animation>
-              </a-sphere>
-          </a-marker>
-
-          <!--T MARKER-->
-          <a-marker preset='custom' type='pattern' url="markers/newT.patt">
-            <a-image position="0 0.5 -2" rotation="-91 0 0" src="ATLBNew.png" width="2" height="2"></a-image>
-            <a-image position="0 0.5 0" rotation="-90 0 0" src="T.png" width="2" height="2"></a-image>
-            <a-sphere position="0 0.5 2" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" radius="1" segments-height="53">
-              <a-animation attribute="rotation"
-                dur="10000"
-                from="0 360 0"
-                to= "0 0 360"
-                repeat="indefinite"
-                easing= "linear">
-              </a-animation>
-              </a-sphere>
-            <!-- <a-plane position="0 0 -1" rotation="-90 0 0" width="10" height="10" fog="true"color="#0000FC" shadow>
-            </a-plane>
-                <a-entity position="0 0.5 0"rotation="-90 0 0">
-                    <a-text color="#F6F5F5" align="center"  width"4" value="
-                      Technology represents a problem of
-                      major importance, requiring analysis and
-                      interpretation, needs no argument...It is
-                      the controlling power of our age,
-                      affecting and shaping virtually all aspects
-                      of human existence in this century.">
-                    </a-text>
-                <a-entity> -->
+            <!--A-MARKER a-marker tag wraps around to contain the images that will be show when marker is recognized -->
+            <a-marker preset='custom' type='pattern' url="markers/newA.patt">
+              <!--first image -->
+              <a-image position="0 0.5 -2" rotation="-91 0 0" src="ATLBNew.png" width="2" height="2"></a-image>
+              <!--second image -->
+              <a-image position="0 0.5 0" rotation="-90 0 0" src="A.png" width="2" height="2"></a-image>
+              <!--third image a-sphere wraps around image that will go onto sphere.-->
+              <a-sphere position="0 0.5 2" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" radius="1" segments-height="53">
+                <a-animation attribute="rotation"
+                  dur="10000"
+                  from="0 360 0"
+                  to= "0 0 360"
+                  repeat="indefinite"
+                  easing= "linear">
+                </a-animation>
+                </a-sphere>
             </a-marker>
 
-          <!--B MARKER-->
-          <a-marker preset='custom' type='pattern' url="markers/newB.patt">
-            <a-image position="0 0.5 -2" rotation="-91 0 0" src="ATLBNew.png" width="2" height="2"></a-image>
-            <a-image position="0 0.5 0" rotation="-90 0 0" src="B.png" width="2" height="2"></a-image>
-            <!-- <a-sphere position="0 0.5 0"src="markers/marsImage.jpg" radius="1" segments-height="10">
-              <a-animation attribute="rotation"
-                dur="10000"
-                from="0 360 0"
-                to= "0 0 360"
-                repeat="indefinite"
-                easing= "linear">
-              </a-animation>
-              </a-sphere> -->
-          </a-marker>
+            <!--T MARKER-->
+            <a-marker preset='custom' type='pattern' url="markers/newT.patt">
+              <a-image position="0 0.5 -2" rotation="-91 0 0" src="ATLBNew.png" width="2" height="2"></a-image>
+              <a-image position="0 0.5 0" rotation="-90 0 0" src="T.png" width="2" height="2"></a-image>
+              <a-sphere position="0 0.5 2" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" radius="1" segments-height="53">
+                <a-animation attribute="rotation"
+                  dur="10000"
+                  from="0 360 0"
+                  to= "0 0 360"
+                  repeat="indefinite"
+                  easing= "linear">
+                </a-animation>
+                </a-sphere>
+              <!-- <a-plane position="0 0 -1" rotation="-90 0 0" width="10" height="10" fog="true"color="#0000FC" shadow>
+              </a-plane>
+                  <a-entity position="0 0.5 0"rotation="-90 0 0">
+                      <a-text color="#F6F5F5" align="center"  width"4" value="
+                        Technology represents a problem of
+                        major importance, requiring analysis and
+                        interpretation, needs no argument...It is
+                        the controlling power of our age,
+                        affecting and shaping virtually all aspects
+                        of human existence in this century.">
+                      </a-text>
+                  <a-entity> -->
+              </a-marker>
 
-          <!--L MARKER-->
-          <a-marker preset='custom' type='pattern' url="markers/newL.patt">
-            <a-image position="0 0.5 -2" rotation="-91 0 0" src="ATLBNew.png" width="2" height="2"></a-image>
-            <a-image position="0 0.5 0" rotation="-90 0 0" src="L.png" width="2" height="2"></a-image>
-            <!-- <a-sphere position="0 0.5 0" src="markers/flares.jpg" radius="1" segments-height="10" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
-              <a-animation attribute="scale"
-                dur="1000"
-                from= "1 1 1"
-                to="1 1 1"
-                direction='alternate-reverse'
-                easing= "ease-in-out-circ"
-                repeat="indefinite"></a-animation>
-              </a-sphere> -->
-          </a-marker>
+            <!--B MARKER-->
+            <a-marker preset='custom' type='pattern' url="markers/newB.patt">
+              <a-image position="0 0.5 -2" rotation="-91 0 0" src="ATLBNew.png" width="2" height="2"></a-image>
+              <a-image position="0 0.5 0" rotation="-90 0 0" src="B.png" width="2" height="2"></a-image>
+              <!-- <a-sphere position="0 0.5 0"src="markers/marsImage.jpg" radius="1" segments-height="10">
+                <a-animation attribute="rotation"
+                  dur="10000"
+                  from="0 360 0"
+                  to= "0 0 360"
+                  repeat="indefinite"
+                  easing= "linear">
+                </a-animation>
+                </a-sphere> -->
+            </a-marker>
 
-          <!--Test marker-->
-          <a-marker preset='custom' type='pattern' url="markers/testMarker.patt">
-            <a-image position="0 0.5 -2" rotation="-91 0 0" src="ATLB.png" width="2" height="2"></a-image>
-            <a-image position="0 0.5 0" rotation="-90 0 0" src="testMarker.png" width="2" height="2"></a-image>
-          </a-marker>
-          <a-entity camera></a-entity>
-        </a-scene>
-</body>
+            <!--L MARKER-->
+            <a-marker preset='custom' type='pattern' url="markers/newL.patt">
+              <a-image position="0 0.5 -2" rotation="-91 0 0" src="ATLBNew.png" width="2" height="2"></a-image>
+              <a-image position="0 0.5 0" rotation="-90 0 0" src="L.png" width="2" height="2"></a-image>
+              <!-- <a-sphere position="0 0.5 0" src="markers/flares.jpg" radius="1" segments-height="10" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
+                <a-animation attribute="scale"
+                  dur="1000"
+                  from= "1 1 1"
+                  to="1 1 1"
+                  direction='alternate-reverse'
+                  easing= "ease-in-out-circ"
+                  repeat="indefinite"></a-animation>
+                </a-sphere> -->
+            </a-marker>
+
+            <!--Test marker-->
+            <a-marker preset='custom' type='pattern' url="markers/testMarker.patt">
+              <a-image position="0 0.5 -2" rotation="-91 0 0" src="ATLB.png" width="2" height="2"></a-image>
+              <a-image position="0 0.5 0" rotation="-90 0 0" src="testMarker.png" width="2" height="2"></a-image>
+            </a-marker>
+            <a-entity camera></a-entity>
+          </a-scene>
+  </body>
 </html>
